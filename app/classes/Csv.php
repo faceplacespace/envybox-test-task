@@ -10,7 +10,6 @@ class Csv implements StorageSystemInterface
     public function __construct() {
         
         if (!file_exists($this->csvFile)) {
-            echo 'sajsajasjkaja';
             throw new \Exception("Файл {$this->csvFile} не найден");
         }
         
